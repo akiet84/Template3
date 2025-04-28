@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------header------------ */
+header{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(./tayho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+
+header .logo{
+    color: rgba(247, 126, 35, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    top: 2vh;
+    left: 4vw;
+    position: absolute;
+    z-index: 2;
+}
+
+header .buttons-container{
+    display: flex;
+    justify-content: center; 
+    gap: 2vw;
+    position: absolute;
+    top: 2vh;
+    left: 40vh;
+
+}
+ header .buttons-container button{
+    border: none;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .lefts{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: absolute;
+    gap: 1vw;
+    right: 5vw;
+    top: 2vh;
+    z-index: 1;
+}
+
+header .lefts .button-2-lefts{
+    display: flex;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button2{
+    padding: 1vw;
+    border-radius: 5px;
+}
+.register{
+    color: rgba(255, 111, 40, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    color: aliceblue;
+    
+}
+
+.center h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+}
+
+.center h2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2rem;
+}
+
+.center button{
+    color: rgba(255, 111, 40, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.up-button{
+    position: fixed;
+    z-index: 20;
+    color: white;
+    bottom: 12vh;
+    right: 10vh;
+    background-color: rgba(247, 126, 35, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+    shape-outside: circle(180px);
+}
+/* -------------------------main -------------------------------*/
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.cartegory{
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    width: fit-content;
+}
+.container-img{
+    width: fit-content;
+    
+    
+    
+
+}
+
+
+
+
+
