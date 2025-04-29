@@ -3,114 +3,124 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ---------------header------------ */
+/* ------------------HEADER---------------------- */
 header{
-    width: 100vw;
-    height: 90vh;
-    background-image: url(./tayho.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12vh;
+    background-color: transparent;
 }
 
-header .logo{
-    color: rgba(247, 126, 35, 1);
+
+.container-button{
     display: flex;
-    justify-content: flex-start;
-    align-self: center;
-    top: 2vh;
-    left: 4vw;
+    gap: 2vh;  
+}
+
+.container-button button{
+    background-color: transparent;
+    width: 8vw;
+    height: 6vh; 
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    font-size: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.lefts{
+    display: flex;
+    gap: 4vh;
+}
+
+.login-register{
+    display: flex;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.button{
+    background-color: rgba(255, 255, 255, 1);
+    width: 8vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: rgba(255, 111, 40, 1);
+}
+
+.login{
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+/* -----------------------MAIN--------------------- */
+
+.img-container img{
     position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 80vh; 
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5); /* màu đen mờ */
     z-index: 2;
 }
-
-header .buttons-container{
-    display: flex;
-    justify-content: center; 
-    gap: 2vw;
+.content{
+    width: 80%;
+    height: 50%;
     position: absolute;
-    top: 2vh;
-    left: 40vh;
-
-}
- header .buttons-container button{
-    border: none;
-    background-color: transparent;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.3rem;
-    padding: 1vh;
+    z-index: 3;
+    top: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-}
-
-header .lefts{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    position: absolute;
-    gap: 1vw;
-    right: 5vw;
-    top: 2vh;
-    z-index: 1;
-}
-
-header .lefts .button-2-lefts{
-    display: flex;
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5rem;
     justify-content: center;
-    align-items: flex-start;
-}
-
-.button2{
-    padding: 1vw;
-    border-radius: 5px;
-}
-.register{
-    color: rgba(255, 111, 40, 1);
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.center{
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    position: absolute;
+    color: rgba(255, 255, 255, 1);
     top: 20vh;
-    left: 25vw;
-    color: aliceblue;
-    
+    left: 20vh;
 }
 
-.center h1{
+.content h1 {
+    font-size: 5rem; 
     font-family: "Poppins", sans-serif;
-    font-size: 4rem;
 }
 
-.center h2{
+.content h3 {
     font-family: "Source Sans 3", sans-serif;
     font-size: 2rem;
+    font-weight: 400;
 }
 
-.center button{
-    color: rgba(255, 111, 40, 1);
-    background-color: rgba(255, 255, 255, 1);
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 2rem;
+.content button {
+    margin-top: 3rem;
+    background-color: rgba(255, 111, 40, 1);
+    width: 10rem;
+    height: 4rem;
     border-radius: 5px;
     border: none;
 }
 
 .up-button{
     position: fixed;
-    z-index: 20;
+    z-index: 4;
     color: white;
-    bottom: 12vh;
+    bottom: 22vh;
     right: 10vh;
     background-color: rgba(247, 126, 35, 1);
     display: inline-flex;
@@ -121,44 +131,71 @@ header .lefts .button-2-lefts{
     border-radius: 360px;
     shape-outside: circle(180px);
 }
-/* -------------------------main -------------------------------*/
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-
-}
-
-.cartegory{
+.block2{
+    position: absolute;
+    z-index: 5;
+    bottom: 12vh;
+    right: 13vw;
     display: flex;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 2rem;
-    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+    width: 70vw;
+    height: 15vh;
+    border-radius: 10px;
 }
 
-.see{
+.buttonover{
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
-    width: 80%;
-    justify-content: flex-end;
-    font-family: "Poppins", sans-serif;
-    color: rgba(247, 126, 35, 1);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1.4rem;
+}
 
+.block2 img{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    padding: 20px;
+    border: 10px;
+    background-color: rgba(255, 231, 219, 1);
+}
+
+.just-a-space{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Screenshot\ 2025-04-29\ 174514.png);
+    background-size: cover;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+}
+
+.categories h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 6vh;
+}
+
+.categories h2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    margin-right: 1vw;
 }
 
 .container-img{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2vh;
+    
 }
 
-.img-down1{
+/* .img-down1{
     position: relative;
     background-image: url(./pic1.png);
     width: 20vw;
@@ -210,9 +247,12 @@ header .lefts .button-2-lefts{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
-    
-}
+} */
 
-#see{
-    color: black;
-}
+
+
+
+
+
+
+
