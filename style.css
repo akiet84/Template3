@@ -126,10 +126,11 @@ header{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 360px;
     shape-outside: circle(180px);
+    font-size: 2rem;
 }
 
 .block2{
@@ -173,23 +174,27 @@ header{
 }
 
 .container2{
+    position: relative;
     width: 100%;
-    height: 60vh;
+    height: 90vh;
 }
 
 .categories h1 {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 6vh;
+    font-family: "Poppins", sans-serif;
 }
 
 .categories h2{
     display: flex;
     justify-content: flex-end;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-right: 6vw;
     padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: rgba(247, 126, 35, 1);
 }
 
 .imgs-down{
@@ -205,7 +210,7 @@ header{
     position: relative;
     background-image: url(./pic1.png);
     width: 20vw;
-    height: 40vh;
+    height: 60vh;
     overflow: hidden;
     background-size: 200% 100%;
     background-position: 74%;
@@ -216,7 +221,7 @@ header{
     position: relative;
     background-image: url(./pic2.jpg);
     width: 20vw;
-    height: 40vh;
+    height: 60vh;
     overflow: hidden;
     background-size: 150% 100%;
     background-position: 74%;
@@ -227,7 +232,7 @@ header{
     position: relative;
     background-image: url(./pic3.jpg);
     width: 20vw;
-    height: 40vh;
+    height: 60vh;
     overflow: hidden;
     background-size: 130% 100%;
     background-position: 74%;
@@ -238,7 +243,7 @@ header{
     position: relative;
     background-image: url(./pic4.jpg);
     width: 20vw;
-    height: 40vh;
+    height: 60vh;
     overflow: hidden;
     background-size: 200% 100%;
     background-position: 55%;
@@ -253,6 +258,30 @@ header{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+}
+
+.left-right-button{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 35vh;
+    gap: 70vw;
+}
+
+.lr-button{
+    background-color: rgba(247, 126, 35, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 360px;
+    shape-outside: circle(180px);
+    border: none;
+    color: white;
+    font-size: 2rem;
 }
 
 
