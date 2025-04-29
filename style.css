@@ -126,26 +126,93 @@ header .lefts .button-2-lefts{
 .main-container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     align-items: center;
 
 }
 
 .cartegory{
+    display: flex;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
-    width: fit-content;
+    width: 100%;
 }
+
+.see{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    font-family: "Poppins", sans-serif;
+    color: rgba(247, 126, 35, 1);
+
+}
+
 .container-img{
-    width: fit-content;
-    
-    
-    
-
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
 }
 
+.img-down1{
+    position: relative;
+    background-image: url(./pic1.png);
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    background-size: 200% 100%;
+    background-position: 74%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+.img-down2{
+    position: relative;
+    background-image: url(./pic2.jpg);
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    background-size: 150% 100%;
+    background-position: 74%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+.img-down3{
+    position: relative;
+    background-image: url(./pic3.jpg);
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    background-size: 130% 100%;
+    background-position: 74%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+.img-down4{
+    position: relative;
+    background-image: url(./pic4.jpg);
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    background-size: 200% 100%;
+    background-position: 55%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
 
+.text{
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    
+}
 
-
-
+#see{
+    color: black;
+}
