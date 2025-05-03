@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* ------------------HEADER---------------------- */
-header{
+header {
     position: absolute;
     z-index: 3;
     top: 0;
@@ -18,38 +19,48 @@ header{
 }
 
 
-.container-button{
+.container-button {
     display: flex;
-    gap: 2vh;  
+    gap: 2vh;
 }
 
-.container-button button{
+.container-button button {
     background-color: transparent;
-    width: 8vw;
-    height: 6vh; 
+    width: fit-content;
+    height: 6vh;
     color: rgba(255, 255, 255, 1);
     border: none;
     font-size: 1.3rem;
     font-family: "Open Sans", sans-serif;
+    cursor: pointer;
 }
 
-.lefts{
+
+.container-button button:hover p {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+.lefts {
     display: flex;
     gap: 4vh;
 }
 
-.login-register{
+.login-register {
     display: flex;
     font-family: "Source Sans 3", sans-serif;
 }
 
-.search{
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
     color: aliceblue;
 }
-.button{
+
+.button {
     background-color: rgba(255, 255, 255, 1);
     width: 8vw;
     height: 6vh;
@@ -61,30 +72,33 @@ header{
 }
 
 
-.login{
+.login {
     background-color: transparent;
     color: whitesmoke;
 }
 
 /* -----------------------MAIN--------------------- */
 
-.img-container img{
+.img-container img {
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height: 80vh; 
+    height: 80vh;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     width: 100vw;
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.5); /* màu đen mờ */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* màu đen mờ */
     z-index: 2;
 }
-.content{
+
+.content {
     width: 80%;
-    height: 50%;
+    height: fit-content;
     position: absolute;
     z-index: 3;
     top: 0;
@@ -98,22 +112,32 @@ header{
 }
 
 .content h1 {
-    font-size: 5rem; 
+    display: block;
+    text-align: center;
+    font-size: 5rem;
     font-family: "Poppins", sans-serif;
 }
 
 .content h3 {
+    display: block;
+    text-align: center;
     font-family: "Source Sans 3", sans-serif;
     font-size: 2rem;
     font-weight: 400;
 }
-.start{
+
+.start {
     color: aliceblue;
     font-family: "Source Sans 3", sans-serif;
+    cursor: pointer;
+    font-size: large;
+}
+
+.start:hover {
+    color: rgba(255, 111, 40, 1);
 }
 
 .content button {
-    margin-top: 3rem;
     background-color: rgba(255, 111, 40, 1);
     width: 10rem;
     height: 4rem;
@@ -121,7 +145,11 @@ header{
     border: none;
 }
 
-.up-button{
+.content button:hover {
+    background-color: aliceblue;
+}
+
+.up-button {
     position: fixed;
     z-index: 4;
     color: white;
@@ -136,34 +164,43 @@ header{
     border-radius: 360px;
     shape-outside: circle(180px);
     font-size: 2rem;
+    cursor: pointer;
 }
 
-.block2{
-    position: absolute;
-    z-index: 5;
-    bottom: 12vh;
-    right: 13vw;
+.block2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     background-color: rgba(255, 255, 255, 1);
-    width: 70vw;
-    height: 15vh;
+    width: fit-content;
+    height: fit-content;
     border-radius: 10px;
 }
 
-.buttonover{
-    background-color: rgba(255, 255, 255, 1);
+.block2overload {
+    position: absolute;
+    z-index: 5;
+    top: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttonover {
+    background-color: transparent;
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     padding: 1.4rem;
+    border-radius: 10px;
 }
 
-.block2 img{
+.block2 img {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 100px;
     padding: 20px;
@@ -171,14 +208,14 @@ header{
     background-color: rgba(255, 231, 219, 1);
 }
 
-.just-a-space{
+.just-a-space {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(./Screenshot\ 2025-04-29\ 174514.png);
     background-size: cover;
 }
 
-.container2{
+.container2 {
     position: relative;
     width: 100%;
     height: 90vh;
@@ -192,7 +229,7 @@ header{
     font-family: "Poppins", sans-serif;
 }
 
-.categories h2{
+.categories h2 {
     display: flex;
     justify-content: flex-end;
     font-size: 2rem;
@@ -202,16 +239,16 @@ header{
     color: rgba(247, 126, 35, 1);
 }
 
-.imgs-down{
+.imgs-down {
     width: 100vw;
     height: 40vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2vh;   
+    gap: 2vh;
 }
 
-.img-down1{
+.img-down1 {
     position: relative;
     background-image: url(./pic1.png);
     width: 20vw;
@@ -222,7 +259,8 @@ header{
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
 }
-.img-down2{
+
+.img-down2 {
     position: relative;
     background-image: url(./pic2.jpg);
     width: 20vw;
@@ -233,7 +271,8 @@ header{
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
 }
-.img-down3{
+
+.img-down3 {
     position: relative;
     background-image: url(./pic3.jpg);
     width: 20vw;
@@ -244,7 +283,8 @@ header{
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
 }
-.img-down4{
+
+.img-down4 {
     position: relative;
     background-image: url(./pic4.jpg);
     width: 20vw;
@@ -256,7 +296,7 @@ header{
     background-blend-mode: darken;
 }
 
-.text{
+.text {
     position: absolute;
     bottom: 2px;
     left: 5px;
@@ -266,16 +306,17 @@ header{
     font-size: 2.5rem;
 }
 
-.left-right-button{
+.left-right-button {
     width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     bottom: 35vh;
     gap: 70vw;
+
 }
 
-.lr-button{
+.lr-button {
     background-color: rgba(247, 126, 35, 1);
     display: inline-flex;
     align-items: center;
@@ -287,12 +328,125 @@ header{
     border: none;
     color: white;
     font-size: 2rem;
+    cursor: pointer;
 }
 
+.lr-button:hover {
+    background-color: rgb(38, 209, 98)
+}
+
+.container-button2 {
+    visibility: hidden;
+    position: absolute;
+    z-index: 900;
+}
+
+nav{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    header {
+        background-color: white;
+    }
+
+    .content {
+        white-space: nowrap;
+    }
 
 
 
+    .foutain {
+        visibility: hidden;
+    }
+
+    .lefts {
+        visibility: hidden;
+    }
+
+    .container-button2 {
+        visibility: visible;
+        position: absolute;
+        z-index: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70vw;
+
+    }
+
+    .container-button2 .hihi {
+        display: flex;
+        gap: 2vw;
+    }
+
+    .hihi button {
+        width: fit-content;
+        font-size: 2rem;
+        border: none;
+        background-color: aliceblue;
+    }
+
+    .account {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .account img {
+        transform: scale(1.5);
+    }
+
+    .container header nav, .container header .button{
+        display: none;
+    }
+
+    .bar{
+        display: block;
+    }
+    nav {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 20%;
+        height: 30vh;
+        background-color: blue;
+        padding: 20px;
+        transition: all 0.4 ease;
+        z-index: 99;
+    }
+
+    .active{
+        right: 0;
+        top: 2rem;
+        display: block;
+        position: fixed;
+        background-color: transparent;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+    }
 
 
+    .container header .bar {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+    nav ul li a{
+        color: red;
+    }
+}
 
+@media (max-width: 800px) {
+    .content h1{
+        font-size: 3rem;
+    }
 
+    .content h3{
+        font-size: 1rem;
+    }
+}
