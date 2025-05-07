@@ -450,3 +450,58 @@ nav{
         font-size: 1rem;
     }
 }
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Rectangle\ 16\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.good-girl img{
+    width: 100%;
+    height: 80vh;
+}
+
+.container33{
+    display: flex;
+}
+.container-girl{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dasshed-bid-circle{
+    background-color: transparent;
+    border: 3px dashed rgba(247, 126, 35, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 360px;
+}
+
+#girl{
+    width: 70vw;
+    height: 70vh;
+
+}
+
+.small-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.content2-girl{
+    width: 50vw;
+}
